@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 35px;
+}
+
+.container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: deepskyblue;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 14px;
+    transition: all 200ms ease-in-out;
+}
+
+
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+}
+
+.btn:active{
+    background-color: #11D99B;
+    border: 2px #11D99B solid;
+    
+}
+
+.form-control {
+    position: relative;
+    margin: 10px 0 20px 0;
+    width: 300px;
+}
+
+.form-control input {
+    display: block;
+    height: 25px;
+    width: 100%;
+    border: 1px lightgray solid;
+    border-radius: 4px;
+    margin: 0;
+    padding: 20px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline-style: solid 2px;
+    outline-color: black;
+}
+
+.form-control label {
+    font-size: 14px;
+    position: relative;
+    top: -35px;
+    left: 0;
+    color: gray;
+}
+
+.form-control label span{
+    display: inline-block;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color:black;
+    font-weight: 600;
+    transform: translateY(-35px);
+}
+
+.text{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
